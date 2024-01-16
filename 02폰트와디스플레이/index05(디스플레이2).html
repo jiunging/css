@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;} /* 여백을 없앰 */
+        ul, li, dl, dd, ol {list-style: none;}
+
+        .gnb{
+            text-align: center;
+            background-color: #000;
+        }
+
+        /* gnb 안에 있는 li의 속성을 inline-block으로 바꿈 */
+        .gnb > li {
+            display: inline-block;
+        }
+
+        /* a태그 속성을 block으로 주고, 크기 설정을 함 */
+        .gnb > li > a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px; /* 위에서 100px 만큼 띄우기 */
+            text-decoration: none; /* 밑줄 없애기 */
+            color: #fff; 
+        }
+        .gnb > li > a:hover {
+            background-color: #333; 
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <!-- <header>
+        <nav class="nav">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <style>
+
+        .logo {
+            text-align: center;
+            background-color: black;
+        }
+
+        .gnb2{
+            background-color: #000;
+            text-align: right;
+            
+        }
+
+
+        .gnb2 > li {
+            display: inline-block;
+            /* width: 100px;
+            height: 100px;
+            line-height: 100px; */
+
+        }
+
+        .gnb2 > li > a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+
+    <header>
+        <div class="logo">
+            <img src="img/css3.png" alt="이미지">
+        </div>
+        <nav class="nav2">
+            <ul class="gnb2">
+
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
