@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {padding: 0; margin: 0;}
+        ul, li, ol, dd, dl {list-style: none;}
+        .img {max-width: 100%; height: auto;}
+
+        .menu > li {
+            list-style: none; /* . 없애기 */
+            display: inline-block;
+        }
+
+        .menu > li > a {
+            display: inline-block;
+            width: 70px;
+            height: 50px;
+
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .menu {
+            background-color: black;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        .menu > li > a:hover {
+            border-bottom: 1px solid #777;
+        }
+
+        #img {
+            /* height: 450px; */
+            max-width: 100%;
+            height: auto;
+            background-image: url(img/쿠팡.jpg);
+            background-size: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .box1 {
+            width: 1000px;
+            margin: auto;
+            margin-top: 30px;
+            
+        }
+
+        .box2 {
+            border: 1px solid #777;
+            height: 200px;
+            width: 1000px;
+            padding-top: 30px;
+        }
+        .box1 .box2 > li {
+            list-style: none;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .box3 {
+            text-align: left;
+        }
+        .box2 > ul {
+            display: inline;
+        }
+
+        .box1 > h3 {
+            padding-bottom: -40px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="menu">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+    </div>
+
+
+    <section id="img">
+        <img src="img/쿠팡.jpg" alt="">
+    </section>
+
+    <div class="box1">
+            <h3>오늘의 발견..</h3>
+
+            <div class="box2">
+                
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+                <li>본문내용..</li>
+
+            </div>
+
+    </div>
+
+    
+</body>
+</html>
