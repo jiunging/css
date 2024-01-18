@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; list-style: none;}
+
+        .wrap {width: 1080px; margin: 0 auto;}
+        .content {overflow: hidden;}
+        .list-wrap {width:540px; float: left; border: 1px solid #777;}
+        .slide-wrap {width: 236px; float: left; border: 1px solid #777; height: 310px;}
+        .user-wrap {width: 280px; float: left; border: 1px solid #777; height: 310px;}
+        
+        .wrap .content .list-wrap ul > li {border: 1px solid #777; float: left; width: 33.3333%; height: 155px; box-sizing: border-box;} /* 사진 6개 넣기 */
+        .wrap .content .list-wrap{border: 1px solid #777; height: 310px; overflow:hidden;} /* 사진쪽 큰 테두리 */
+
+        .wrap .content .slide-wrap{margin-left: 8px; height: 310px; } /* 중간 */
+
+        .wrap .content .user-wrap{margin-left: 8px; width: 280px;} /* 마지막 큰 틀 */
+
+        .wrap .content .user-wrap .login {overflow: hidden; padding: 40px 15px 0px 15px;} /* 멜론을 더 안전하게 이용~ 회원가입 */
+        .wrap .content .user-wrap .login .text{float: left; font-size: 11px; color: #939393;}
+        .wrap .content .user-wrap .login .join{float: right; font-size: 11px; color: #939393;}
+
+        
+        .wrap .content .user-wrap .btn{ /* 로그인버튼 */
+            border: none;
+            width: 250px; height: 37px; 
+            background-color: #00d344; 
+            color: white; 
+            margin: 10px 15px 50px 15px;
+        }
+
+        .wrap .content .user-wrap .promotion{border-top: 2px solid #777;}
+
+        .content .slide-wrap img{width: 100%; height: 100%;} /* 사진 */
+        .content .list-wrap li img{width: 100%; height: 100%;} /* 왼쪽 사진들 */
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <section>
+        <div class="wrap">
+            
+        <div class="content">
+            <div class="list-wrap"><!-- 왼 -->
+                <ul>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                    <li><img src="img/엄.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="slide-wrap"><!-- 가운데 -->
+                <img src="img/엄...............png" alt="">
+            </div>
+            <div class="user-wrap"><!-- 오른쪽 -->
+                <div class="login-wrap">
+                    <div class="login">
+                        <p class="text">멜론을 더 안전하게 이용하세요</p>
+                        <p class="join">회원가입</p>
+                    </div>
+
+                    <button class="btn">로그인</button>
+                </div>
+                <div class="promotion">
+                    프로모션 영역...
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

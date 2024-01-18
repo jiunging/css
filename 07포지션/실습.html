@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul li {list-style: none;}
+        * {padding: 0; margin: 0;}
+       
+        body { /* 배경 */
+            background-image: url(images/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo { /* 로고 */
+            text-align: center;
+            padding: 20px;
+        }
+        .logo > img {
+            width: 25%;
+        }
+        .menu ul { /* 검은색 바 */
+            background-color: black;
+            text-align: center;
+        }
+        .menu ul li{ /* li태그 (메뉴) */
+            display: inline-block;
+            width: 80px; 
+            line-height: 60px;
+        }
+        .menu ul li a {
+            height: 100%;
+            color: white;
+            text-decoration: none;
+        }
+        .menu ul li:hover { /* 메뉴 건드렸을 때 */
+            background-color: darkgray;
+        }
+        .slider ul {
+            margin: 0 auto;
+            width: 1000px;
+            overflow: hidden;
+        }
+        .slider ul li { /* 메뉴 아래 상품들 이미지 테두리들 */
+            text-align: center;
+            width: 25%;
+            margin: 40px 0;
+            float: left;
+            box-sizing: border-box;
+
+        }
+        .slider {
+            background-color: white;
+        }
+
+        /* 아래 3개 아이콘 아이콘 아이콘 이거는 스티키 */
+        .iconul {
+            background-color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+        }
+        .iconul li {
+            display: inline-block;
+            width: 80px;
+        }
+        .iconul .big {width: 120px;}
+
+        .mainpic {
+            text-align: center;
+            position: relative;
+        }
+        .mainpic img {
+            display: inline-block;
+        }
+        .mainpic .leftpics .subpic1{
+            position: absolute;
+            left: 340px;
+            top: 0px;
+        }
+        .mainpic .leftpics .subpic2{
+            position: absolute;
+            left: 340px;
+            top: 150px;
+        }
+
+        .mainpic .rightpics .subpic3{
+            position: absolute;
+            right: 340px;
+            top: 0px;
+        }
+
+        .mainpic .rightpics .subpic4{
+            position: absolute;
+            right: 340px;
+            top: 150px;
+        }
+
+        .top {
+            width: 50px;
+            height: 50px;
+            background: #c13333;
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 50px;
+            z-index: 20;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+    <div class="logo">
+        <img src="images/logo.jpg" alt="">
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </div>
+
+    <div class="slider">
+        <ul>
+            <li><img src="images/item01.png" alt=""><br>
+                iPhone(디스플레이 or 플롯)
+            </li>
+            <li><img src="images/item02.png" alt=""><br>
+                iPod
+            </li>
+            <li><img src="images/item03.png" alt=""><br>
+                iPad
+            </li>
+            <li><img src="images/item04.png" alt=""><br>
+                iMac
+            </li>
+        </ul>
+    </div>
+    
+
+        <ul class="iconul">
+            <li>아이콘</li>
+            <li>아이콘</li>
+            <li>아이콘</li>
+            <li class="big">이거는 스티키</li>
+        </ul>
+
+
+        <div class="mainpic">
+            <img src="images/ipad.jpg" alt="">
+
+
+            <div class="leftpics">
+                <div class="subpic1">
+                    <img src="images/side01.png" alt="">
+                </div>
+
+                <div class="subpic2">
+                    <img src="images/side02.png" alt="">
+                </div>
+            </div>
+
+            <div class="rightpics">
+                <div class="subpic3">
+                    <img src="images/side03.png" alt="">
+                </div>
+
+                <div class="subpic4">
+                    <img src="images/side04.png" alt="">
+                </div>
+            </div>
+
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

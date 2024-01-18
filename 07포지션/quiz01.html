@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li {list-style: none;}
+
+        .box1 { /* 제일 큰 박스 */
+            border: 1px solid #777;
+            width: 600px;
+            height: 250px;
+            position: relative;
+            /* padding: 10px 10px 10px 90px; 일단 대기*/ 
+            margin: 0 auto;
+
+        }
+
+        .box1 .box2 { /* 2번째 박스 */
+            border: 1px solid #777;
+            height: 170px;
+            margin: 10px 10px 0px 90px;
+        }
+
+        .box1 img {
+            position: absolute;
+            width: 10%;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .box3 {
+            overflow: hidden;
+            box-sizing: border-box;
+            margin: 5px 10px 0px 90px;
+            height: 64px
+            
+        }
+
+        .box3 .btns .text1{
+            float: left;
+            box-sizing: border-box;
+        }
+        .box3 .btns .submit {
+            float: right;
+
+        }
+
+        .text2 {
+            display: block;
+            /* margin-left: 90px; */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <img src="img/엄...............png" alt="">
+
+        <div class="box2">
+            
+            <div class="context">
+                <li>힌트: 이미지영역을 position:absolute를 사용합니다</li>
+            </div>
+
+        </div>
+
+
+        <div class="box3">
+            <div class="btns">
+                <input type="text" class="text1">
+                <button type="submit" class="submit">등록하기</button> <br>
+            </div>
+            <input type="text" class="text2">
+            <br><br>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
