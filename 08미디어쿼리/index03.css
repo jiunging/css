@@ -1,0 +1,108 @@
+* {margin: 0; padding: 0;}
+li, ul {list-style: none;}
+a {text-decoration: none;}
+img{max-width: 100%; height: auto;}
+
+
+@media(min-width: 767px) {
+    #wrap {
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+    }
+
+    /* 위에 뒷배경사진 */
+    #wrap .logo {
+        background-image: url(images/bg.png);
+        height: 280px;
+    }
+
+    /* 반응형 웹 제목 */
+    #wrap .logo > h1 {
+        color: #fff000;
+        font-weight: bold;
+        padding: 20px 20px;
+    }
+
+    /* 메뉴메뉴메뉴메뉴 */
+    #wrap nav {background-color: #c13333;}
+    #wrap nav > ul > li {display: inline-block;}
+    #wrap nav > ul > li > a {
+        display: block;
+        color: #fff;
+        padding: 20px 30px;
+    }
+    #wrap nav > ul > li > a:hover {
+        background-color: #903;
+    }
+
+    
+    /* 전체가 960px이라 이렇게 700, 260 혹은 좀 줄여도 됨 */
+    /* 왼쪽에 글, 오른쪽에 사진 배치 */
+    #section {
+        overflow: hidden;
+    }
+    #section .left{float: left; width: 700px; padding: 20px;}
+    #section .right{
+        float: right; 
+        width: 200px; 
+        padding: 10px;
+        background-color: #e3e3e3;
+        height: 500px;
+    }
+
+    #footer {
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+
+
+}
+
+/* 실습, 모바일 */
+@media(max-width: 766px) {
+    #wrap {
+        /* width: 100%; */
+        min-width: 350px;  /* 최소 350, 이상부터는 가변 */
+    }
+
+    /* 반응형 웹 글씨 */
+    #wrap .logo > h1 {
+        color: #fff000;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    #wrap .logo {
+        background-image: url(images/bg.png);
+        height: 130px;
+        width: 100%;
+    }
+    /* 메뉴메뉴메뉴메뉴 */
+    #wrap nav > ul > li {
+        display: block;
+        background-color: #c13333;
+
+    }
+
+    #wrap nav > ul > li > a {
+        text-align: center;
+        display: block;
+        color: white;
+        padding: 4px;
+    }
+
+    #wrap #section .left > h3 {font-size: 16px;}
+    #wrap #section .left > p {font-size: 13px;}
+
+    #wrap #section .right > img{
+        padding: 2px;
+        width: 100%;
+    }
+
+
+
+
+}

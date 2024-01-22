@@ -1,0 +1,42 @@
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, li, ol, dd, dl {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+html, body {
+    /* 웹폰트 */
+    font-family: "Noto Sans KR", sans-serif;
+    width: 100%;
+    min-width: 320px;
+}
+
+/*
+/* 보통 이것들은 커스터마이징이 들어감
+/* input, textarea, button, select 
+/* 구글, 사파리, 파이어폭스 기본디자인을 지우고, 커스터마이징, 알고만있으셈 
+input[type=checkbox], input[type=radio] {
+    -webkit-appearance: none; /* 구글, 사파리 
+    -moz-appearance: none; /* 파이어폭스 
+    appearance: none; /* 나머지의 기본 디자인을 지운다 
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+input[type=checkbox]:checked, /* 체크가 됐을 때 속성 
+input[type=radio]:checked {
+    outline: none;
+    background-color: #3498db;
+}
+*/
