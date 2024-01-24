@@ -1,0 +1,109 @@
+.container .row .col-xs-12 {
+    padding: 10px;
+}
+
+/* 상세보기(쿠팡 예제) */
+.container .row .col-xs-12 > h3 {display: inline-block;}
+.container .row .col-xs-12 > h5 {display: inline-block;}
+
+/* 상품 제목/설명 */
+.container .detail-info .title {
+    font-size: 25px;
+
+}
+
+.container .detail-info .price {
+    font-size: 30px;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+.container .price > strong {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.container .detail-control .price{
+    overflow: hidden;
+}
+
+.container .detail-control .left{
+    margin-top: 10px;
+    float: left;
+    font-size: 20px;
+}
+
+.container .detail-control .right{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+.container .detail-control .order {
+    overflow:hidden;
+}
+.container .detail-control .order .left {
+    float: left;
+    width: 50%;
+    height: 54px;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.container .detail-control .order .right {
+    float: right;
+    width: 50%;
+    height: 54px;
+    font-size: 18px;
+}
+
+.reply-wrap {
+    border: 1px solid #777;
+    padding: 15px;
+}
+.reply-wrap .reply-image {
+    
+}
+
+.reply-wrap .reply-content {
+    padding-left: 60px;
+}
+
+/* 탭 디자인 */
+.mytab > li {
+    width: 25%;
+    text-align: center;
+}
+
+.mytab > li > a {
+    color: #000;
+    border: 1px solid #e3e3e3;
+    margin: 0;
+    border-radius: 0;
+}
+
+.nav-tabs > li.active>a,
+.nav-tabs > li.active>a:focus,
+.nav-tabs > li.active>a:hover {
+    color:red
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
